@@ -1,60 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Explore India</title>
-    <link rel="stylesheet" href="./css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore India</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header>
-    <h1>Explore Incredible India!!</h1>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Places</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="#">Contact</a>
-    </nav>
+    <div class="navbar container">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✦</span>
+            <span>Explore <strong>India</strong></span>
+        </a>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
+        <nav class="nav-links">
+            <a class="active" href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
+<main>
 <section class="hero">
-    <h2>Discover Incredible India</h2>
-    <p>Experience culture, heritage and nature.</p>
-
-    <button onclick="showMessage()">
-        Explore More
-    </button>
+    <div class="hero-content container">
+        <p class="eyebrow">TRAVEL · DISCOVER · EXPERIENCE</p>
+        <h1>India,<br><em>unforgettable.</em></h1>
+        <p class="hero-text">
+            From timeless monuments to peaceful backwaters and sun-kissed beaches,
+            discover the colours, stories and landscapes that make India extraordinary.
+        </p>
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="places.html">Explore Places →</a>
+            <a class="btn btn-ghost" href="gallery.html">View Gallery</a>
+        </div>
+    </div>
+    <div class="scroll-hint">Scroll to explore ↓</div>
 </section>
 
-<section class="about">
-    <h2>About Travel India</h2>
-    <p>Explore the beauty, culture and heritage of India.</p>
+<section class="intro section">
+    <div class="container intro-grid">
+        <div>
+            <p class="eyebrow dark">WHY INDIA?</p>
+            <h2>A journey through <em>many Indias.</em></h2>
+        </div>
+        <p class="intro-copy">
+            India is not one experience. It is a collection of cultures, cuisines,
+            landscapes and stories waiting to be explored. Start with a destination
+            and let the journey unfold.
+        </p>
+    </div>
 </section>
 
-<section class="places">
+<section class="destinations section">
+    <div class="container">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow dark">FEATURED DESTINATIONS</p>
+                <h2>Places worth <em>remembering.</em></h2>
+            </div>
+            <a class="text-link" href="places.html">See all places →</a>
+        </div>
 
-    <div class="card">
-        <h3>Taj Mahal</h3>
-        <p>Agra, Uttar Pradesh</p>
+        <div class="destination-grid">
+            <article class="destination-card">
+                <div class="card-image"><img src="images/tajmahal.jpg" alt="Taj Mahal"></div>
+                <div class="card-body">
+                    <span>AGRA · NORTH INDIA</span>
+                    <h3>Taj Mahal</h3>
+                    <p>A timeless monument of love, architecture and history.</p>
+                    <a href="places.html#agra">Discover →</a>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <div class="card-image"><img src="images/kerala.jpg" alt="Kerala backwaters"></div>
+                <div class="card-body">
+                    <span>KERALA · SOUTH INDIA</span>
+                    <h3>Kerala</h3>
+                    <p>Quiet waterways, tropical greenery and a slower rhythm.</p>
+                    <a href="places.html#kerala">Discover →</a>
+                </div>
+            </article>
+
+            <article class="destination-card">
+                <div class="card-image"><img src="images/goa.jpeg" alt="Goa beach"></div>
+                <div class="card-body">
+                    <span>GOA · WEST COAST</span>
+                    <h3>Goa</h3>
+                    <p>Golden sunsets, beaches and coastal charm by the Arabian Sea.</p>
+                    <a href="places.html#goa">Discover →</a>
+                </div>
+            </article>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Kerala Backwaters</h3>
-        <p>God's Own Country</p>
-    </div>
-
-    <div class="card">
-        <h3>Goa Beaches</h3>
-        <p>Sun, Sand and Sea</p>
-    </div>
-
 </section>
 
-<footer>
-    <p>© 2026 Explore India</p>
+<section class="quote-section">
+    <div class="quote-box">
+        <p class="quote-mark">“</p>
+        <blockquote>The best journeys take you to places you never expected to find.</blockquote>
+        <p>— Explore India</p>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container cta-box">
+        <div>
+            <p class="eyebrow">YOUR NEXT ADVENTURE</p>
+            <h2>Where will India take you?</h2>
+        </div>
+        <a class="btn btn-light" href="contact.html">Plan a trip →</a>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">✦</span> Explore <strong>India</strong></a>
+        <p>© 2026 Explore India. Made for curious travellers.</p>
+        <a href="contact.html">Contact →</a>
+    </div>
 </footer>
 
-<script src="./scripts/script.js"></script>
-
+<script>
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.nav-links');
+if(toggle) toggle.addEventListener('click',()=>nav.classList.toggle('open'));
+</script>
 </body>
 </html>

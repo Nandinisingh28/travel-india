@@ -1,17 +1,24 @@
-# Travel India — Beautified Version
+TRAVEL INDIA REDESIGN
 
-Copy these files into your existing `travel-india` project:
+Replace:
+- index.html
+- css/style.css
 
-- `index.html` → replace your existing homepage
-- `places.html` → new Places page
-- `contact.html` → new Contact page
-- `css/style.css` → replace your existing stylesheet
-- `scripts/script.js` → replace your existing script
+Add:
+- places.html
+- contact.html
 
-Keep your existing:
-- `images/goa.jpeg`
-- `images/kerala.jpg`
-- `images/tajmahal.jpg`
-- `gallery.html`
+Keep:
+- gallery.html
+- images/goa.jpeg
+- images/kerala.jpg
+- images/tajmahal.jpg
 
-The design uses your existing local images, so no additional image files are required.
+Important:
+Update the navigation in gallery.html so it uses:
+Home -> index.html
+Places -> places.html
+Gallery -> gallery.html
+Contact -> contact.html
+
+This package does not contain your image files; it expects your existing images folder.
